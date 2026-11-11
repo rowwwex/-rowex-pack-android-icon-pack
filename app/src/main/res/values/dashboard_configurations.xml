@@ -46,7 +46,7 @@
         CONFIG: HOME
     -->
     <!-- Home title. This will be shown in the home page -->
-    <string name="home_title">CandyBar Sample</string>
+    <string name="home_title">Rowex Pack</string>
 
     <!-- Home image
         If you want to use an image from url, just put the url here
@@ -56,7 +56,7 @@
         If you want to use a solid color, you can put the hex color code here
         ex: <string name="home_image">#000000</string>
         -->
-    <string name="home_image">home_image</string>
+    <string name="home_image">ic_launcher</string>
 
     <!-- Home image style
         Available choices:
