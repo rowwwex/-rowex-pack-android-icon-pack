@@ -19,12 +19,13 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-
+        
       - name: Unzip Icons Package
         run: |
           mkdir -p app/src/main/res/drawable
-          unzip -o drawable.zip -d app/src/main/res/drawable/
-
+          cat *.part* > full_drawable.zip
+          unzip -o full_drawable.zip -d app/src/main/res/drawable/
+          
       - name: Build with Gradle
         run: ./gradlew clean :app:assembleDebug --stacktrace
 
